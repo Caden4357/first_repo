@@ -86,3 +86,12 @@ def reverse_list(list):
     list.reverse()
     return list
 print(reverse_list([5,4,3,6,77,5,4,8]))
+
+
+
+
+
+
+
+
+def remove_last_item()

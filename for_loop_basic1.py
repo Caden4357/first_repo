@@ -43,3 +43,17 @@ print(a())
 def a():
     return 5
 print(a()+a())
+
+#Find if a # is even or odd
+num = 11
+if num % 2 == 0:
+    print(f"{num} is even")
+else:
+    print(f"{num} is odd")
+
+def years_to_days(age):
+    year = 365
+    days = 0 
+    days = age * year
+    return days
+print(years_to_days(23))
