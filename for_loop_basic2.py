@@ -65,12 +65,12 @@ def maximum_value(list):
 print(maximum_value([-9,-10,-12,-200,-2,-1]))
 #Create a function that takes a list and returns a dictionary that has the sumTotal, average, minimum, maximum and length of the list.
 #Example: ultimate_analysis([37,2,1,-9]) should return {'sumTotal': 31, 'average': 7.75, 'minimum': -9, 'maximum': 37, 'length': 4 }
-def ultimate_analysis(list):
-    sum = sum_total(list)
-    avg = sum_average(list)
-    min = minimum_value(list)
-    max = maximum_value(list)
-    len = length(list)
+def ultimate_analysis(lst):
+    sum = sum_total(lst)
+    avg = sum_average(lst)
+    min = minimum_value(lst)
+    max = maximum_value(lst)
+    len = length(lst)
     new_dict = {
         "sumTotal": sum,
         "average": avg,
@@ -87,6 +87,22 @@ def reverse_list(list):
     return list
 print(reverse_list([5,4,3,6,77,5,4,8]))
 
+def reverse_list2(lst):
+    length = len(lst)-1
+    x = length
+    for i in range(len(lst)//2):
+        lst[i], lst[x-i] = lst[x-i], lst[i]
+    return lst
+print(reverse_list2([0,1,2,3]))
+
+def function(lst):
+    length = len(lst)-1
+    x = length
+    for i in range(len(lst)//2):
+        if lst[i] != lst[x-1]:
+            return False
+    return True
+print(function([1,2,3,2,1]))
 
 
 
@@ -94,4 +110,14 @@ print(reverse_list([5,4,3,6,77,5,4,8]))
 
 
 
-def remove_last_item()
+
+
+
+
+
+
+
+
+
+
+
